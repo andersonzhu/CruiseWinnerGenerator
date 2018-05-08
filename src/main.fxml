@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+
+       <Label alignment="CENTER" layoutX="115.0" layoutY="63.0" prefHeight="53.0" prefWidth="661.0" text="Grayson College Cruise To Completion" textFill="#1d2a57">
+           <font>
+               <Font name="System Bold" size="36.0" />
+           </font>
+       </Label>
+
+
+        <Label fx:id="studentName" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="275.0" prefHeight="60.0" prefWidth="400.0" text="XXXXX XXXXX">
+           <font>
+              <Font name="Arial Rounded MT Bold" size="30.0" />
+           </font>
+        </Label>
+
+
+
+        <Label fx:id="studentID" alignment="CENTER" layoutX="250.0" layoutY="207.0" prefHeight="60.0" prefWidth="400.0" text="00000000000">
+           <font>
+              <Font name="Arial Rounded MT Bold" size="36.0" />
+           </font>
+        </Label>
+
+       <JFXSpinner fx:id="jfxSpinner" layoutX="430.0" layoutY="357.0" radius="13" startingAngle="0" styleClass="blue-spinner" />
+
+       <JFXButton fx:id="button" buttonType="RAISED" layoutX="350.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleClick" prefHeight="45.0" prefWidth="140.0" text="Go Vikings!">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </JFXButton>
+
+   </children>
+</AnchorPane>
