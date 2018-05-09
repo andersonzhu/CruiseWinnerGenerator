@@ -58,7 +58,8 @@ public class Controller {
                         @Override
                         public void run() {
                             winner = winnerGenerator();
-                            studentID.setText(winner);
+                            String winnerID = makeupStudentID(winner);
+                            studentID.setText(winnerID);
                             studentName.setText(map.get(winner));
                             studentIDs.remove(winner);
                             button.setDisable(false);
@@ -114,6 +115,17 @@ public class Controller {
 //            e.printStackTrace();
 //        }
 //    }
+
+
+    private String makeupStudentID(String studentID){
+
+        int n = studentID.length();
+        String result = "";
+        for (int i = 0; i < n-4; i++) {
+            result += "X";
+        }
+        return result + studentID.substring(n-4);
+    }
 
     private static String winnerGenerator(){
         for (int i=0; i<1000; i++) {
